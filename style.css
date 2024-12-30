@@ -1,0 +1,327 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background: #f4f4f4;
+    color:#333;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: #333;
+   color:#f4f4f4;
+   padding: 20px;
+  }
+  
+  .logo h1{
+    font-size: 2rem;
+    color:#fff;
+  }
+  
+  .navbar ul{
+    display: flex;
+    list-style-type: none;
+  }
+  
+    .navbar ul li{
+    margin-right: 15px;
+  }
+  
+  
+  .navbar ul li a{
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    text-decoration: none;
+  }
+  .navbar ul li a:hover{
+    background:green;
+    border-radius: 5px;
+  }
+  .navbar ul li a.active {
+    background: green;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    .navbar ul li {
+      padding: 0.5rem 0;
+    }
+  }
+  
+  /* About Section */
+  #about {
+    padding: 3rem 2rem;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  #about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  #about p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+    margin-top: 1rem;
+  }
+  
+  /* Skills Section */
+  #skills {
+    padding: 2rem 2rem;
+    background-color: #f4f4f4;
+  }
+  
+  #skills h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  #skills ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #skills ul li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  #skills ul ul {
+    margin-left: 20px;
+  }
+  
+  #skills ul ul li {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Projects Section */
+  #projects {
+    padding: 2rem 2rem;
+    background-color: #fff;
+  }
+  
+  #projects h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  #projects ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #projects ul li {
+    margin-bottom: 2rem;
+    background-color: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 5px;
+  }
+  
+  #projects ul li h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  #projects ul li p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 0.5rem;
+  }
+  
+  #projects ul li a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  #projects ul li a:hover {
+    background-color: green;
+  }
+  
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    #about p, #skills ul li, #projects ul li {
+      font-size: 1rem;
+    }
+  }
+  
+   /* Contact Section */
+  #contact {
+    padding: 3rem 2rem;
+    background-color: #fff;
+  }
+  
+  #contact h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  #contact p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  input, textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #333;
+  }
+  
+  button {
+    padding: 0.8rem 2rem;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: green;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #contact {
+      padding: 2rem 1.5rem;
+    }
+  
+    #contact h2 {
+      font-size: 1.5rem;
+    }
+  
+    #contact p {
+      font-size: 1rem;
+    }
+  
+    input, textarea {
+      max-width: 100%;
+    }
+  
+    button {
+      padding: 0.8rem 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #contact h2 {
+      font-size: 1.3rem;
+    }
+  
+    #contact p {
+      font-size: 0.9rem;
+    }
+  
+    label {
+      font-size: 0.9rem;
+    }
+  
+    input, textarea {
+      padding: 0.6rem;
+      font-size: 1rem;
+    }
+  
+    button {
+      padding: 0.7rem 1.2rem;
+    }
+  }
+  
+  /* Footer Section */
+  footer {
+    background-color: #333;
+    color: #f4f4f4;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .footer-content p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-content .social-links a {
+    color: #f4f4f4;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-content .social-links a:hover {
+    color: #4CAF50; /* Green color for hover effect */
+  }
+  
+  /* Responsive Design for Footer */
+  @media (max-width: 768px) {
+    footer {
+      padding: 1.5rem 0;
+    }
+  
+    .footer-content .social-links a {
+      font-size: 1rem;
+      margin: 0 8px;
+    }
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  
